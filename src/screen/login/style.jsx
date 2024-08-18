@@ -47,5 +47,14 @@ export const styles = StyleSheet.create({
         fontSize: 14,
         color: Color.grey,
         marginTop: hp(3)
+    },
+    image: {
+        marginTop: hp(5)
+    },
+    version: {
+        fontSize: 14,
+        fontWeight: "400",
+        color: Color.grey,
+        marginTop: hp(5)
     }
 })

@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, View, Text } from "react-native";
+import { SafeAreaView, View, Text, Image } from "react-native";
 
 import { styles } from "./style";
 import BackButton from "../../component/button/backButton";
@@ -35,12 +35,18 @@ export default function Login() {
                     />
                 </View>
                 <View style={styles.btnContainer}>
-                    <CustomButton label={"Login"} onPress={() => {}}/>
+                    <CustomButton title={"Login"} onPress={() => {}}/>
                 </View>
                 <View style={styles.footer}>
                     <Text style={styles.dontHaveAcct}>Don’t have an account? Sign up</Text>
                     <Text style={styles.forgotPassword}>Forgot Password?</Text>
+                    <Image
+                    source={require("../../../assets/thumb.png")}
+                    style={styles.image}
+                />
+                <Text style={styles.version}>v1.1.1</Text>
                 </View>
+               
             </View>
         </SafeAreaView>
     )

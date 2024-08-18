@@ -4,10 +4,10 @@ import { Color } from "../../constant/color";
 
 
 
-export default function CustomButton() {
+export default function CustomButton({ title, onPress }) {
     return(
-        <TouchableOpacity style={styles.container}>
-            <Text style={styles.title}>Login</Text>
+        <TouchableOpacity style={styles.container} onPress={onPress}>
+            <Text style={styles.title}>{title}</Text>
         </TouchableOpacity>
     )
 }
