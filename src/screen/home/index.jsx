@@ -26,7 +26,7 @@ export default function Home() {
                         <FontAwesome name="bell" size={20}/>
                     </View>
                 </View>
-                <View>
+                <View style={styles.dashboardContainer}>
                     <Dashboard/>
                 </View>
             </View>

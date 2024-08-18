@@ -34,5 +34,8 @@ export const styles = StyleSheet.create({
     iconContainer: {
         flexDirection: "row",
         gap: wp(3)
+    },
+    dashboardContainer: {
+        marginTop: hp(4.5)
     }
 })
