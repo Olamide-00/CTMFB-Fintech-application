@@ -37,5 +37,8 @@ export const styles = StyleSheet.create({
     },
     dashboardContainer: {
         marginTop: hp(4.5)
+    },
+    serviceContainer: {
+        marginTop: hp(5)
     }
 })

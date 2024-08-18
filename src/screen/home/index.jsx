@@ -2,6 +2,7 @@ import { SafeAreaView, View, Text, Image } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import { styles } from "./style";
 import Dashboard from "../../component/dashboard";
+import Services from "../../component/services";
 
 
 
@@ -28,6 +29,9 @@ export default function Home() {
                 </View>
                 <View style={styles.dashboardContainer}>
                     <Dashboard/>
+                </View>
+                <View style={styles.serviceContainer}>
+                    <Services/>
                 </View>
             </View>
         </SafeAreaView>
