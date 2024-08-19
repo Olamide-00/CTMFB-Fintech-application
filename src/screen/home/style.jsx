@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     },
     container: {
         marginHorizontal: wp(3),
-        marginTop: hp(5)
+        marginTop: hp(3)
     },
     header: {
         flexDirection: "row",
@@ -36,9 +36,12 @@ export const styles = StyleSheet.create({
         gap: wp(3)
     },
     dashboardContainer: {
-        marginTop: hp(4.5)
+        marginTop: hp(4)
     },
     serviceContainer: {
-        marginTop: hp(5)
+        marginTop: hp(4)
+    },
+    historyContainer: {
+        marginTop: hp(2)
     }
 })

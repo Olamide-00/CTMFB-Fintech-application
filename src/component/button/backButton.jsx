@@ -1,11 +1,15 @@
 import { TouchableOpacity, Text, StyleSheet} from "react-native";
 import { Color } from "../../constant/color";
+import { useNavigation } from "@react-navigation/native";
 
 
 
-export default function BackButton() {
+export default function BackButton({ onPress }) {
+
+    const navigation = useNavigation();
+
     return(
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={onPress}>
             <Text style={styles.title}>Cancel</Text>
         </TouchableOpacity>
     )

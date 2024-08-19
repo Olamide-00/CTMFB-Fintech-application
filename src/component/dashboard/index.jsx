@@ -3,11 +3,15 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-nat
 import { FontAwesome } from "@expo/vector-icons";
 import Checkbox from "expo-checkbox"; "expo-checkbox"
 import { Color } from "../../constant/color";
+import { useState } from "react";
 
 
 
 
 export default function Dashboard() {
+
+    const [isChecked, setIsChecked] = useState(false);
+
     return(
         <View style={styles.container}>
             <Image
@@ -16,7 +20,7 @@ export default function Dashboard() {
             />
             <View>
                 <Text style={styles.title}>Savings Account Balance</Text>
-                <Text style={styles.amount}>NGN102,238.71</Text>
+                <Text style={styles.amount}>{isChecked?  "NGN102,238.71" : "****"}</Text>
                 <Text style={styles.name}>Adewole Temitope</Text>
             </View>
             <View style={styles.accountDetails}>
@@ -26,7 +30,12 @@ export default function Dashboard() {
                 </View>
                 <View style={styles.balanceContainer}>
                     <Text style={styles.hide}>Hide balance</Text>
-                    <Checkbox style={styles.checkbox}/>
+                    <Checkbox 
+                        value={isChecked}
+                        onValueChange={setIsChecked}
+                        color={isChecked? "#fff" : "gray"}
+                        style={styles.checkbox}
+                    />
                 </View>
             </View>
         </View>

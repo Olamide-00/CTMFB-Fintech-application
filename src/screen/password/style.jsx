@@ -6,7 +6,8 @@ import { Color } from "../../constant/color";
 
 export const styles = StyleSheet.create({
     root: {
-        // flex: 1
+        flex: 1,
+        backgroundColor: "#fff"
     },
     btnContainer: {
         marginTop: hp(5),
@@ -18,8 +19,6 @@ export const styles = StyleSheet.create({
     image: {
         alignSelf: "center",
         marginTop: hp(12),
-        // width: 30,
-        // height: 30
     },
     name: {
         fontSize: 24,
@@ -40,5 +39,8 @@ export const styles = StyleSheet.create({
     },
     avatar: {
         alignSelf: "center"
+    },
+    errorText: {
+        color: "red"
     }
 })

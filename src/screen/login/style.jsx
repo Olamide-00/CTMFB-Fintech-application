@@ -4,7 +4,8 @@ import { Color } from "../../constant/color";
 
 export const styles = StyleSheet.create({
     root: {
-        // flex: 1
+        flex: 1,
+        backgroundColor: Color.white
     },
     btnContainer: {
         marginTop: hp(5),
@@ -56,5 +57,9 @@ export const styles = StyleSheet.create({
         fontWeight: "400",
         color: Color.grey,
         marginTop: hp(5)
+    },
+    errorText: {
+        marginTop: hp(-4),
+        color: "red"
     }
 })

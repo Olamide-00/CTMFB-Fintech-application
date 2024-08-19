@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
         fontWeight: "700",
     },
     seeAllContainer: {
-        backgroundColor: Color.grey,
+        backgroundColor: "#DDEDF4",
         paddingHorizontal: wp(4),
         paddingVertical: hp(0.7),
         borderRadius: 5,

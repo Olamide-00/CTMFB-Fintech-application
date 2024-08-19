@@ -7,7 +7,7 @@ import { Color } from "../../constant/color";
 
 
 
-export default function CustomTextInput({ label, placeholder, isNumber, isPassword }) {
+export default function CustomTextInput({ label, placeholder, isNumber, isPassword, value, onChangeText }) {
 
     const [isVisible, setIsVisible] = useState(true);
     const handleVisible = () => {
@@ -24,6 +24,8 @@ export default function CustomTextInput({ label, placeholder, isNumber, isPasswo
                     style={styles.input}
                     secureTextEntry={isVisible}
                     keyboardType={isNumber? "numeric" : null}
+                    value={value}
+                    onChangeText={onChangeText}
                 />
                 {
                     isPassword && <Ionicons name={isVisible? "eye" : "eye-off"} size={20} onPress={handleVisible} />

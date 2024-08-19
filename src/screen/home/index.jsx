@@ -1,13 +1,19 @@
-import { SafeAreaView, View, Text, Image } from "react-native";
+import { SafeAreaView, View, Text, Image, ScrollView } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import { styles } from "./style";
 import Dashboard from "../../component/dashboard";
 import Services from "../../component/services";
+import TransactionHistory from "../../component/transactionHistory";
+import NewUser from "../../component/newUser";
 
 
 
 
 export default function Home() {
+
+    const newUser = true; // toggle between new user and existing user
+
+
     return(
         <SafeAreaView>
             <View style={styles.container} >
@@ -28,11 +34,18 @@ export default function Home() {
                     </View>
                 </View>
                 <View style={styles.dashboardContainer}>
-                    <Dashboard/>
+                    <Dashboard/> 
                 </View>
-                <View style={styles.serviceContainer}>
-                    <Services/>
-                </View>
+                <ScrollView showsVerticalScrollIndicator={false} >
+                    <View style={styles.serviceContainer}>
+                        <Services/>
+                    </View>
+                    <View style={styles.historyContainer}>
+                        {
+                            newUser? <NewUser/> :  <TransactionHistory/>
+                        }   
+                    </View>
+                </ScrollView>
             </View>
         </SafeAreaView>
     )
