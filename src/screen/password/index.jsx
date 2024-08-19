@@ -31,7 +31,7 @@ export default function Password() {
     const handleLogin = () => {
         if (validatePassword()) {
             // Navigate to the next screen if the password is valid
-            navigation.navigate("Home-tab"); // Adjust this to your desired screen
+            navigation.navigate("Home-tab"); 
         }
     };
 
