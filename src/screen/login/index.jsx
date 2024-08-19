@@ -5,7 +5,7 @@ import BackButton from "../../component/button/backButton";
 import CustomTextInput from "../../component/customTextInput";
 import CustomButton from "../../component/button/customButton";
 import { useNavigation } from "@react-navigation/native";
-import * as LocalAuthentication from 'expo-local-authentication';  // Import expo-local-authentication
+import * as LocalAuthentication from 'expo-local-authentication';  
 
 export default function Login() {
     const navigation = useNavigation();
@@ -20,7 +20,7 @@ export default function Login() {
         let isValid = true;
         let newErrors = { phoneNumber: "", password: "" };
 
-        // Phone number validation (basic example, you can improve)
+        // Phone number validation 
         if (!phoneNumber.trim()) {
             newErrors.phoneNumber = "Phone number is required.";
             isValid = false;

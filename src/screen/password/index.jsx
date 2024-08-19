@@ -5,7 +5,7 @@ import { styles } from "./style";
 import CustomTextInput from "../../component/customTextInput";
 import CustomButton from "../../component/button/customButton";
 import { useNavigation } from "@react-navigation/native";
-import * as LocalAuthentication from 'expo-local-authentication';  // Import expo-local-authentication
+import * as LocalAuthentication from 'expo-local-authentication';
 
 export default function Password() {
     const navigation = useNavigation();
